@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// 리액트 생명주기 설명용
+import Example1 from './example1/App';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// props를 어떻게 사용하는지 다시 한번 복습하기
+import Example2 from './example2/App';
+
+// bind를 방법들 & 이유
+import Example3 from './example3/App';
+
+// state 끌어올리기
+import Example4 from './example4/App';
+
+ReactDOM.render(<Example3 />, document.getElementById('root'));
